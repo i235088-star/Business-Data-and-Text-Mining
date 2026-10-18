@@ -136,7 +136,7 @@ def analyse(df):
     out.append(f"Total cost: £{sel.Price.sum():.2f}")
     out.append(f"Total rating score: {sel.Rating.sum()}")
 
-    ax = counts.plot(kind="bar", color="steelblue", edgecolor="black")  # BONUS 4
+    ax = counts.plot(kind="bar", color="orange", edgecolor="black")  # BONUS 4
     ax.set_title("Number of Books by Star Rating")
     ax.set_xlabel("Star rating"); ax.set_ylabel("Number of books")
     plt.xticks(rotation=0); plt.tight_layout()
